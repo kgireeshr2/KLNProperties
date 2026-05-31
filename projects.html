@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects & Listings – KLN Properties Hyderabad</title>
+  <meta name="description" content="Browse KLN Properties listings – gated community plots, villa farmlands, farm plots, residential and commercial properties in Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ──────────────────────────────────────────── -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="KLN Properties Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" width="180" height="46" aria-hidden="true" focusable="false" style="display:block">
+          <defs>
+            <linearGradient id="gG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#d4a847"/><stop offset="100%" stop-color="#f0c96a"/></linearGradient>
+            <linearGradient id="bG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f0c96a"/><stop offset="100%" stop-color="#a07830"/></linearGradient>
+          </defs>
+          <rect x="2" y="17" width="14" height="30" rx="1.5" fill="url(#bG)" opacity=".95"/>
+          <rect x="0" y="25" width="5" height="22" rx="1" fill="#d4a847" opacity=".7"/>
+          <rect x="14" y="22" width="5" height="25" rx="1" fill="#d4a847" opacity=".7"/>
+          <polygon points="9,2 0,19 19,19" fill="url(#gG)"/>
+          <rect x="5" y="22" width="3" height="3" rx=".4" fill="#fff" opacity=".85"/>
+          <rect x="10" y="22" width="3" height="3" rx=".4" fill="#fff" opacity=".65"/>
+          <rect x="5" y="28" width="3" height="3" rx=".4" fill="#fff" opacity=".85"/>
+          <rect x="10" y="28" width="3" height="3" rx=".4" fill="#fff" opacity=".65"/>
+          <rect x="6" y="35" width="5" height="12" rx="2.5" fill="#05080f" opacity=".7"/>
+          <line x1="0" y1="47.5" x2="20" y2="47.5" stroke="url(#gG)" stroke-width="1.5"/>
+          <line x1="24" y1="10" x2="24" y2="48" stroke="#d4a847" stroke-width=".8" opacity=".35"/>
+          <text x="30" y="32" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="900" font-size="24" letter-spacing="2" fill="url(#gG)">KLN</text>
+          <text x="31" y="45" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="500" font-size="9" letter-spacing="3.5" fill="#c5d0e8" opacity=".88">PROPERTIES</text>
+        </svg>
+      </a>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html#inquiry-form" class="btn btn-gold nav-cta">Enquire Now</a>
+    </div>
+  </header>
+
+  <!-- ── Page Hero ────────────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Projects</div>
+      <div class="label">Our Portfolio</div>
+      <h1>All Properties & Listings</h1>
+      <p>Explore our curated portfolio of verified properties across Hyderabad's most sought-after locations.</p>
+    </div>
+  </div>
+
+  <!-- ── Projects ─────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All Properties</button>
+        <button class="filter-btn" data-filter="gated">Gated Community</button>
+        <button class="filter-btn" data-filter="farmland">Villa Farmlands</button>
+        <button class="filter-btn" data-filter="farmplot">Farm Plots</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="rent">For Rent</button>
+        <button class="filter-btn" data-filter="sale">For Sale</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Gated Communities -->
+        <article class="project-card" data-category="gated sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Green Valley Gated Plots" loading="lazy" />
+            <span class="project-badge badge-sale">For Sale</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Gated Community</div>
+            <h3>Green Valley Gated Plots</h3>
+            <p class="project-loc">📍 Kokapet, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>200–500</strong> sq.yd</span>
+              <span><strong>HMDA</strong> Approved</span>
+              <span><strong>24/7</strong> Security</span>
+            </div>
+            <div class="project-price">₹ 35 L onwards</div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="gated sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Royal Enclave Plots" loading="lazy" />
+            <span class="project-badge badge-new">New Launch</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Gated Community</div>
+            <h3>Royal Enclave Gated Plots</h3>
+            <p class="project-loc">📍 Narsingi, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>150–350</strong> sq.yd</span>
+              <span><strong>DTCP</strong> Approved</span>
+              <span><strong>Club</strong> House</span>
+            </div>
+            <div class="project-price">₹ 28 L onwards</div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="gated sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80" alt="Prestige Heights" loading="lazy" />
+            <span class="project-badge badge-sale">For Sale</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Gated Community</div>
+            <h3>Prestige Heights – Gated Township</h3>
+            <p class="project-loc">📍 Gandipet, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>300–600</strong> sq.yd</span>
+              <span><strong>HMDA</strong> Approved</span>
+              <span><strong>Lake</strong> View</span>
+            </div>
+            <div class="project-price">₹ 52 L onwards</div>
+          </div>
+        </article>
+
+        <!-- Villa Farmlands -->
+        <article class="project-card" data-category="farmland sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Serene Acres Villa Farmland" loading="lazy" />
+            <span class="project-badge badge-new">New Launch</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Villa Farmland</div>
+            <h3>Serene Acres Villa Farmland</h3>
+            <p class="project-loc">📍 Shankarpally, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>1–5</strong> Acres</span>
+              <span><strong>Clear</strong> Title</span>
+              <span><strong>Plantation</strong> Included</span>
+            </div>
+            <div class="project-price">₹ 1.2 Cr onwards</div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="farmland sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=600&q=80" alt="Harmony Farms" loading="lazy" />
+            <span class="project-badge badge-sale">For Sale</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Villa Farmland</div>
+            <h3>Harmony Farms & Villa Plots</h3>
+            <p class="project-loc">📍 Chevella, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>2–10</strong> Acres</span>
+              <span><strong>Water</strong> Source</span>
+              <span><strong>Road</strong> Access</span>
+            </div>
+            <div class="project-price">₹ 85 L / Acre</div>
+          </div>
+        </article>
+
+        <!-- Farm Plots -->
+        <article class="project-card" data-category="farmplot sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Golden Harvest Farm Plots" loading="lazy" />
+            <span class="project-badge badge-sale">For Sale</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Farm Plots</div>
+            <h3>Golden Harvest Farm Plots</h3>
+            <p class="project-loc">📍 Vikarabad, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>250–1000</strong> sq.yd</span>
+              <span><strong>NA</strong> Plots</span>
+              <span><strong>Road</strong> Access</span>
+            </div>
+            <div class="project-price">₹ 12 L onwards</div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="farmplot sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Nature's Edge Farm Plots" loading="lazy" />
+            <span class="project-badge badge-new">New Launch</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Farm Plots</div>
+            <h3>Nature's Edge Agricultural Plots</h3>
+            <p class="project-loc">📍 Tandur, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>500–2000</strong> sq.yd</span>
+              <span><strong>Fertile</strong> Land</span>
+              <span><strong>NH</strong> Access</span>
+            </div>
+            <div class="project-price">₹ 8 L onwards</div>
+          </div>
+        </article>
+
+        <!-- Residential -->
+        <article class="project-card" data-category="residential rent">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="3BHK Kokapet" loading="lazy" />
+            <span class="project-badge badge-rent">For Rent</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Residential</div>
+            <h3>Premium 3BHK Apartment – Kokapet</h3>
+            <p class="project-loc">📍 Kokapet, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>1800</strong> sq.ft</span>
+              <span><strong>3</strong> BHK</span>
+              <span><strong>Semi-Furnished</strong></span>
+            </div>
+            <div class="project-price">₹ 28,000 / month</div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="residential sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="4BHK Villa Narsingi" loading="lazy" />
+            <span class="project-badge badge-sale">For Sale</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Independent Villa</div>
+            <h3>Luxury 4BHK Independent Villa</h3>
+            <p class="project-loc">📍 Narsingi, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>3200</strong> sq.ft</span>
+              <span><strong>4</strong> BHK</span>
+              <span><strong>Private</strong> Garden</span>
+            </div>
+            <div class="project-price">₹ 2.8 Cr onwards</div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="residential rent">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80" alt="2BHK Apartment" loading="lazy" />
+            <span class="project-badge badge-rent">For Rent</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Apartment</div>
+            <h3>Modern 2BHK – Financial District</h3>
+            <p class="project-loc">📍 Financial District, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>1200</strong> sq.ft</span>
+              <span><strong>2</strong> BHK</span>
+              <span><strong>Fully-Furnished</strong></span>
+            </div>
+            <div class="project-price">₹ 22,000 / month</div>
+          </div>
+        </article>
+
+        <!-- Commercial -->
+        <article class="project-card" data-category="commercial rent">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=600&q=80" alt="Office Space Financial District" loading="lazy" />
+            <span class="project-badge badge-rent">For Rent</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Commercial Office</div>
+            <h3>Premium Office Space – Financial District</h3>
+            <p class="project-loc">📍 Financial District, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>2500</strong> sq.ft</span>
+              <span><strong>Grade-A</strong> Building</span>
+              <span><strong>Metro</strong> Nearby</span>
+            </div>
+            <div class="project-price">₹ 85,000 / month</div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="commercial sale">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Commercial Plot" loading="lazy" />
+            <span class="project-badge badge-sale">For Sale</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Commercial Plot</div>
+            <h3>Commercial Corner Plot – Kokapet</h3>
+            <p class="project-loc">📍 Kokapet Junction, Hyderabad</p>
+            <div class="project-meta">
+              <span><strong>400</strong> sq.yd</span>
+              <span><strong>Main</strong> Road</span>
+              <span><strong>Clear</strong> Title</span>
+            </div>
+            <div class="project-price">₹ 1.8 Cr</div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+
+      <p class="no-results" id="noResults" style="display:none; text-align:center; padding:60px 0; color:var(--muted); font-size:1rem;">No listings found for this filter. <a href="contact.html" style="color:var(--gold);">Contact us</a> for off-market options.</p>
+
+    </div>
+  </section>
+
+  <!-- ── CTA ──────────────────────────────────────────────── -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-text">
+          <div class="label">Can't Find What You Need?</div>
+          <h2>We Have Off-Market Listings Too</h2>
+          <p>KLN Properties has an extensive network. Tell us what you're looking for and we'll find it.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html#inquiry-form" class="btn btn-gold">Send Custom Requirement</a>
+          <a href="tel:+919052361870" class="btn btn-outline">📞 Call Surendra</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="KLN Properties Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" width="180" height="46" aria-hidden="true" focusable="false" style="display:block">
+          <defs>
+            <linearGradient id="gG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#d4a847"/><stop offset="100%" stop-color="#f0c96a"/></linearGradient>
+            <linearGradient id="bG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f0c96a"/><stop offset="100%" stop-color="#a07830"/></linearGradient>
+          </defs>
+          <rect x="2" y="17" width="14" height="30" rx="1.5" fill="url(#bG)" opacity=".95"/>
+          <rect x="0" y="25" width="5" height="22" rx="1" fill="#d4a847" opacity=".7"/>
+          <rect x="14" y="22" width="5" height="25" rx="1" fill="#d4a847" opacity=".7"/>
+          <polygon points="9,2 0,19 19,19" fill="url(#gG)"/>
+          <rect x="5" y="22" width="3" height="3" rx=".4" fill="#fff" opacity=".85"/>
+          <rect x="10" y="22" width="3" height="3" rx=".4" fill="#fff" opacity=".65"/>
+          <rect x="5" y="28" width="3" height="3" rx=".4" fill="#fff" opacity=".85"/>
+          <rect x="10" y="28" width="3" height="3" rx=".4" fill="#fff" opacity=".65"/>
+          <rect x="6" y="35" width="5" height="12" rx="2.5" fill="#05080f" opacity=".7"/>
+          <line x1="0" y1="47.5" x2="20" y2="47.5" stroke="url(#gG)" stroke-width="1.5"/>
+          <line x1="24" y1="10" x2="24" y2="48" stroke="#d4a847" stroke-width=".8" opacity=".35"/>
+          <text x="30" y="32" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="900" font-size="24" letter-spacing="2" fill="url(#gG)">KLN</text>
+          <text x="31" y="45" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="500" font-size="9" letter-spacing="3.5" fill="#c5d0e8" opacity=".88">PROPERTIES</text>
+        </svg>
+      </a>
+          <p>Your trusted real estate partner in Hyderabad – gated communities, farmlands, farm plots, rentals and complete documentation support.</p>
+          <p class="mt-16" style="font-size:.8rem; color:var(--muted);">📍 Kokapet, Hyderabad, Telangana</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul>
+            <li><a href="projects.html">Gated Community</a></li>
+            <li><a href="projects.html">Villa Farmlands</a></li>
+            <li><a href="projects.html">Farm Plots</a></li>
+            <li><a href="projects.html">Residential</a></li>
+            <li><a href="projects.html">Commercial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919052361870">Surendra G: 9052361870</a></li>
+            <li><a href="tel:+918660240119">Chandrashekar G: 8660240119</a></li>
+            <li><a href="contact.html">Send Enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 KLN Properties. All rights reserved.</p>
+        <p>Kokapet, Hyderabad · <a href="contact.html">Contact Us</a></p>
+        <p class="footer-septror">Software support &amp; powered by <a href="https://www.septronr.com" target="_blank" rel="noopener">Septror</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="main.js"></script>
+</body>
+</html>

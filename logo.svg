@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60" role="img" aria-label="KLN Properties Logo">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a847;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0c96a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0c96a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a07830;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── Icon: Stylised building with K shape roofline ── -->
+  <g filter="url(#glow)">
+    <!-- Main tower body -->
+    <rect x="6" y="20" width="16" height="34" rx="1.5" fill="url(#bldGrad)" opacity="0.95"/>
+    <!-- Side wing left -->
+    <rect x="2" y="30" width="6" height="24" rx="1" fill="#d4a847" opacity="0.7"/>
+    <!-- Side wing right -->
+    <rect x="20" y="26" width="6" height="28" rx="1" fill="#d4a847" opacity="0.7"/>
+    <!-- Rooftop triangle / peak -->
+    <polygon points="14,4 2,22 26,22" fill="url(#goldGrad)"/>
+    <!-- Peak accent line -->
+    <line x1="14" y1="6" x2="14" y2="14" stroke="#fff" stroke-width="1.2" opacity="0.6"/>
+    <!-- Windows row 1 -->
+    <rect x="10" y="25" width="4" height="4" rx=".5" fill="#fff" opacity="0.85"/>
+    <rect x="16" y="25" width="3" height="4" rx=".5" fill="#fff" opacity="0.6"/>
+    <!-- Windows row 2 -->
+    <rect x="10" y="32" width="4" height="4" rx=".5" fill="#fff" opacity="0.85"/>
+    <rect x="16" y="32" width="3" height="4" rx=".5" fill="#fff" opacity="0.6"/>
+    <!-- Door arch -->
+    <rect x="11" y="42" width="6" height="12" rx="3" fill="#05080f" opacity="0.7"/>
+    <!-- Gold base line -->
+    <line x1="1" y1="54.5" x2="27" y2="54.5" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  </g>
+
+  <!-- ── Wordmark ──────────────────────────────────────── -->
+  <!-- "KLN" -->
+  <text x="36" y="38"
+    font-family="'Inter', 'Segoe UI', Arial, sans-serif"
+    font-weight="900"
+    font-size="26"
+    letter-spacing="2"
+    fill="url(#goldGrad)">KLN</text>
+
+  <!-- "PROPERTIES" -->
+  <text x="37" y="52"
+    font-family="'Inter', 'Segoe UI', Arial, sans-serif"
+    font-weight="500"
+    font-size="10"
+    letter-spacing="3.5"
+    fill="#c5d0e8"
+    opacity="0.9">PROPERTIES</text>
+
+  <!-- Vertical divider -->
+  <line x1="32" y1="16" x2="32" y2="56" stroke="#d4a847" stroke-width="0.8" opacity="0.4"/>
+</svg>
