@@ -1,4 +1,4 @@
-name: Deploy Static Website
+name: Deploy Static Website to kln
 
 on:
   push:
